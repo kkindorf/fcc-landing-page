@@ -1,0 +1,188 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+/* LANDING PAGE STYLES */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    border: 8px dotted red;
+    font-size: 18px;
+}
+main, header {
+    padding: 25px;
+}
+header h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.6em;
+    float: left;
+    
+}
+#nav-bar {
+    float: right;
+}
+#nav-bar li {
+    display: inline-block;
+    margin-right: 10px;
+}
+ .headline {
+     text-align: center;
+     font-size: 1.8em;
+     margin: 30px;
+ }
+ form {
+    text-align: center;
+    margin: 40px auto;
+}
+ .featured-content {
+     margin: 30px auto;
+     padding: 10px;
+     width: 900px;
+ }
+ .featured-content .icon-left {
+     float: left;
+     margin-right: 15px;
+     font-size: 1.7em;
+     margin-top: 5px;
+     height: 100%;
+     width: 70px;
+     text-align: center;
+ }
+ .icon-left i {
+     font-size: 1.7em;
+ }
+.featured-content h2 {
+    font-size: 1.5em;
+    padding-bottom: 8px;
+}
+.card-container {
+    position: relative;
+    overflow: hidden;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.card {
+    float: left;
+    width: 30%;
+    margin: 15px;
+    border: 1px solid #444;
+    text-align: center;
+}
+.card h2, .price {
+    font-size: 1.5em;
+    padding: 10px;
+}
+.card h2 {
+    background-color: #4f4f4f;
+    color: #fff;
+}
+.price {
+    margin-top: 6px;
+}
+
+.card .description {
+    font-size: 18px;
+    margin: 0px 0px 15px 0px;
+}
+.video-wrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.video-wrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+@media(max-width: 1025px) {
+    .card {
+        float: none;
+        width: 50%;
+        margin: 25px auto;
+    }
+}
+@media(max-width: 860px) {
+    .featured-content {
+        width: 100%;
+    }
+}
+@media(max-width: 800px) {
+    #nav-bar {
+        float: none;
+        text-align: center;
+        clear: both;
+    }
+    #nav-bar ul {
+        margin-top: 30px;
+    }
+    #nav-bar ul li {
+        display: block;
+        margin-right: 0px;
+        margin-top: 15px;
+    }
+    .card {
+        width: 75%;
+    }
+}
+@media(max-width: 600px) {
+    header h1 {
+        float: none;
+
+    }
+    .headline {
+        margin: 0px;
+    }
+    .card {
+        width: auto;
+    }
+}
